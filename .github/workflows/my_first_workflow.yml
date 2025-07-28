@@ -1,6 +1,6 @@
 name: Shell commands
 on: [push]
-jobs:
+jobs:[
 	run-shell-command:
 		runs-on: ${{ matrix.os }}
 		strategy:
@@ -14,4 +14,4 @@ jobs:
 			python3 -V
 			touch my_file_with_workflow.py
 			ls -l
-
+]
